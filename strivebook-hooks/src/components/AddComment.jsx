@@ -25,6 +25,7 @@ const AddComment = ({ asin }) => {
   //     })
   //   }
   // }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     setComment({
       comment: "",
@@ -44,7 +45,7 @@ const AddComment = ({ asin }) => {
           headers: {
             "Content-type": "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGI3OWY5NTgxNmI1YjAwMTU5NDA3NDAiLCJpYXQiOjE2MjI2NDY2NzcsImV4cCI6MTYyMzg1NjI3N30.y-rBwB5WAQOWBvWrLlAgTQUrbGulxd2M6cWH3VLyGLw",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzZjZjQwZmQ0YmUzZDAwMTU4NDVmZWQiLCJpYXQiOjE2Njk3MzI1ODcsImV4cCI6MTY3MDk0MjE4N30.p0vB7pawx4dUuyfFdrnTGn1zw8qGaBKvSladvY5Y2KQ",
           },
         }
       );
