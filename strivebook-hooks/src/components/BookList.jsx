@@ -50,7 +50,7 @@ const BookList = ({ books }) => {
               ))}
           </Row>
         </Col>
-        <Col md={4}>
+        <Col md={4} className="position-stick">
           <CommentArea asin={selectedBook} />
         </Col>
       </Row>

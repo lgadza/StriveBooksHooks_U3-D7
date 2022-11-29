@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+.position-stick {
+  position: sticky !important;
+  top: 0;
+  right: 0;
+  height: 100vh;
+}
+.comments-area {
+  min-height: 20vh !important;
+}

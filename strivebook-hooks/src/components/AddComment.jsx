@@ -32,7 +32,7 @@ const AddComment = ({ asin }) => {
       rate: 1,
       elementId: { asin },
     });
-  });
+  }, []);
 
   const sendComment = async (e) => {
     e.preventDefault();
