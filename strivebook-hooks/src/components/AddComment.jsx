@@ -15,6 +15,7 @@ const AddComment = ({ asin }) => {
     rate: 1,
     elementId: null,
   });
+  console.log(comment);
   // componentDidUpdate(prevProps) {
   //   if (prevProps.asin !== this.props.asin) {
   //     this.setState({
@@ -77,10 +78,8 @@ const AddComment = ({ asin }) => {
               //   },
               // })
               setComment({
-                comment: {
-                  ...comment,
-                  comment: e.target.value,
-                },
+                ...comment,
+                comment: e.target.value,
               })
             }
           />
@@ -99,7 +98,6 @@ const AddComment = ({ asin }) => {
               // })
               setComment({
                 comment: {
-                  ...comment,
                   rate: e.target.value,
                 },
               })
